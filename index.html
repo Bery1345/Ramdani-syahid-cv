@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101a2b">
+<meta name="description" content="Curriculum Vitae Rhamdani Syahid — Operator Produksi dan Lay Out.">
+<title>Rhamdani Syahid | Professional CV</title>
+<style>
+:root{--navy:#101a2b;--navy2:#192942;--gold:#c8a96b;--ink:#1b2432;--muted:#687386;--line:#e4e8ef;--paper:#fff;--wash:#f4f6f9}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:78px}
+body{margin:0;background:var(--wash);color:var(--ink);font:15px/1.7 Inter,Arial,Helvetica,sans-serif}
+a{color:inherit}.nav{height:auto;min-height:68px;padding:14px max(22px,calc((100% - 1100px)/2));background:var(--navy);color:#fff;display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}
+.logo{font-weight:800;letter-spacing:1.3px;font-size:13px}.logo span{color:var(--gold)}
+.navlinks{display:flex;gap:22px;flex-wrap:wrap}.navlinks a{text-decoration:none;font-size:12px;color:#d8deea}.navlinks a:hover{color:var(--gold)}
+.wrap{max-width:1100px;margin:34px auto;padding:0 18px}.sheet{background:var(--paper);border:1px solid #e9edf2;box-shadow:0 20px 60px #14213a0c;border-radius:18px;overflow:hidden}
+.hero{position:relative;overflow:hidden;background:linear-gradient(120deg,var(--navy),#233653);color:white;padding:54px clamp(24px,5vw,58px);display:grid;grid-template-columns:1fr 220px;gap:36px;align-items:center}
+.hero:after{content:"";position:absolute;width:360px;height:360px;border:1px solid #ffffff13;border-radius:50%;right:110px;top:-240px;box-shadow:0 0 0 35px #ffffff08,0 0 0 70px #ffffff05;pointer-events:none}
+.kicker{display:flex;align-items:center;gap:10px;text-transform:uppercase;letter-spacing:2.5px;color:var(--gold);font-size:11px;font-weight:800}
+.kicker:before{content:"";width:28px;height:1px;background:var(--gold)}
+h1{font-size:clamp(34px,5vw,52px);line-height:1.08;letter-spacing:-1.3px;margin:14px 0 8px;font-weight:800}
+.role{font-size:17px;color:#d7dfec;font-weight:600;margin:0 0 14px}.intro{max-width:600px;color:#cbd4e2;margin:0}
+.contact-strip{display:flex;gap:10px 18px;flex-wrap:wrap;margin-top:24px;font-size:12px;color:#e6eaf1}.contact-strip span{display:inline-flex;align-items:center;gap:7px}
+.photo-frame{position:relative;z-index:1;padding:7px;border:1px solid #c8a96b80;border-radius:18px;max-width:220px;justify-self:end;background:#ffffff08}
+.photo{display:block;width:200px;height:245px;object-fit:cover;object-position:center 24%;border-radius:12px}
+.hero-buttons{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:10px 15px;border-radius:8px;text-decoration:none;font-size:12px;font-weight:700;transition:.2s}
+.btn-primary{background:var(--gold);color:#101a2b}.btn-outline{border:1px solid #ffffff50;color:#fff}.btn:hover{transform:translateY(-1px);filter:brightness(1.05)}
+.main-grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(260px,.8fr);gap:42px;padding:40px clamp(24px,5vw,58px)}
+.section{margin-bottom:34px}.section:last-child{margin-bottom:0}.section-head{display:flex;align-items:center;gap:12px;margin:0 0 18px}
+.section-no{font-size:11px;letter-spacing:1px;color:var(--gold);font-weight:800}.section h2{font-size:13px;letter-spacing:1.5px;text-transform:uppercase;margin:0;color:var(--navy)}
+.section-head:after{content:"";height:1px;background:var(--line);flex:1}
+p{margin:0 0 10px}.summary{color:#4c5668}
+.timeline{border-left:1px solid #d9dfe8;margin-left:5px;padding-left:20px;position:relative}
+.timeline:before{content:"";position:absolute;left:-5px;top:5px;width:9px;height:9px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px #f5eee1}
+.entry-title{font-size:16px;font-weight:800;margin:0;color:#1a2639}.entry-meta{font-size:12px;color:var(--muted);margin:3px 0 10px}
+.bullets{padding-left:18px;margin:8px 0 0;color:#4c5668}.bullets li{padding-left:3px;margin:5px 0}
+.details{display:grid;gap:14px}.detail{display:grid;grid-template-columns:75px 1fr;gap:10px;font-size:13px;overflow-wrap:anywhere}.detail dt{color:var(--muted)}.detail dd{margin:0;font-weight:600;color:#293447}.detail a{text-decoration:none}.detail a:hover{color:#8a6a31}
+.skill-group{margin-bottom:18px}.skill-label{font-size:12px;font-weight:800;margin-bottom:9px;color:#293447}.pills{display:flex;flex-wrap:wrap;gap:7px}.pill{padding:6px 10px;background:#f3f5f8;border:1px solid #e5e9ef;border-radius:6px;font-size:11px;color:#414c5e}
+.note{background:#f8f6f1;border-left:3px solid var(--gold);padding:13px 15px;border-radius:0 8px 8px 0;color:#5c5547;font-size:12px}
+.footer{max-width:1100px;margin:0 auto;padding:0 18px 24px;text-align:center;font-size:11px;color:#8a93a2}
+@media(max-width:760px){.nav{padding:14px 20px}.navlinks{gap:13px}.wrap{margin:16px auto;padding:0 10px}.hero{padding:30px 24px;grid-template-columns:1fr 118px;gap:14px}.photo-frame{max-width:118px;padding:4px;border-radius:12px}.photo{width:108px;height:140px;border-radius:8px}.hero:after{right:-140px}.role{font-size:14px}.intro{font-size:13px}.contact-strip{gap:7px 12px}.main-grid{grid-template-columns:1fr;gap:4px;padding:28px 24px}.section{margin-bottom:28px}}
+@media(max-width:430px){.hero{grid-template-columns:1fr 90px;padding:26px 18px}.photo-frame{max-width:90px}.photo{width:80px;height:108px}.kicker{font-size:9px;letter-spacing:1.5px}h1{font-size:31px}.hero-buttons .btn{padding:9px 10px;font-size:11px}.main-grid{padding:25px 18px}.detail{grid-template-columns:67px 1fr}.navlinks a{font-size:11px}}
+@media print{body{background:#fff}.nav,.hero-buttons{display:none}.wrap{margin:0;padding:0}.sheet{box-shadow:none;border:0}.hero{print-color-adjust:exact;-webkit-print-color-adjust:exact;padding:28px}.main-grid{padding:24px;gap:28px}.footer{padding:12px}.photo{height:180px}}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="logo">RS<span> / </span>CURRICULUM VITAE</div>
+  <nav class="navlinks" aria-label="Navigasi utama">
+    <a href="#profil">Profil</a><a href="#pengalaman">Pengalaman</a><a href="#pendidikan">Pendidikan</a><a href="#kemampuan">Kemampuan</a>
+  </nav>
+</header>
+<main class="wrap">
+<article class="sheet">
+  <section class="hero">
+    <div>
+      <div class="kicker">Professional Profile</div>
+      <h1>Rhamdani<br>Syahid</h1>
+      <p class="role">Operator Produksi · Lay Out</p>
+      <p class="intro">Pribadi yang disiplin, bertanggung jawab, dan siap berkontribusi melalui kerja tim, ketelitian, serta kemauan untuk terus belajar.</p>
+      <div class="contact-strip">
+        <span>✉ <a href="mailto:syahiddhani3@gmail.com">syahiddhani3@gmail.com</a></span>
+        <span>☎ <a href="tel:+6283133799459">+62 831-3379-9459</a></span>
+      </div>
+      <div class="hero-buttons">
+        <a class="btn btn-primary" href="javascript:window.print()">↓ Simpan sebagai PDF</a>
+        <a class="btn btn-outline" href="mailto:syahiddhani3@gmail.com">Hubungi Saya ↗</a>
+      </div>
+    </div>
+    <div class="photo-frame"><img class="photo" src="assets/profile.jpg" alt="Foto profil Rhamdani Syahid"></div>
+  </section>
+  <div class="main-grid">
+    <div>
+      <section class="section" id="profil">
+        <div class="section-head"><span class="section-no">01</span><h2>Profil Profesional</h2></div>
+        <p class="summary">Saya memiliki sikap kerja yang disiplin dan bertanggung jawab, mampu bekerja secara mandiri maupun dalam tim, serta memiliki komunikasi dasar yang baik. Saya siap mempelajari prosedur baru, mengikuti arahan kerja, dan memberikan kontribusi terbaik bagi perusahaan.</p>
+      </section>
+      <section class="section" id="pengalaman">
+        <div class="section-head"><span class="section-no">02</span><h2>Pengalaman Kerja</h2></div>
+        <div class="timeline">
+          <h3 class="entry-title">PT. Bima Anugrah</h3>
+          <div class="entry-meta">Operator Produksi · Lay Out</div>
+          <ul class="bullets">
+            <li>Mendukung proses produksi dan pekerjaan lay out sesuai arahan serta prosedur kerja.</li>
+            <li>Menjaga kedisiplinan, ketelitian, dan tanggung jawab selama bekerja.</li>
+            <li>Bekerja sama dengan tim untuk mendukung kelancaran kegiatan operasional.</li>
+          </ul>
+        </div>
+      </section>
+      <section class="section" id="pendidikan">
+        <div class="section-head"><span class="section-no">03</span><h2>Pendidikan</h2></div>
+        <div class="timeline">
+          <h3 class="entry-title">SMAN 1 Kadupandak</h3>
+          <div class="entry-meta">2023 – 2026</div>
+        </div>
+      </section>
+    </div>
+    <aside>
+      <section class="section">
+        <div class="section-head"><span class="section-no">04</span><h2>Informasi Kontak</h2></div>
+        <dl class="details">
+          <div class="detail"><dt>Nama</dt><dd>Rhamdani Syahid</dd></div>
+          <div class="detail"><dt>Alamat</dt><dd>Jl. Raya Banjaran 21A/63, RT/RW 06/19, Kelurahan Baleendah, Kecamatan Baleendah, Bandung</dd></div>
+          <div class="detail"><dt>Email</dt><dd><a href="mailto:syahiddhani3@gmail.com">syahiddhani3@gmail.com</a></dd></div>
+          <div class="detail"><dt>Telepon</dt><dd><a href="tel:+6283133799459">+62 831-3379-9459</a></dd></div>
+        </dl>
+      </section>
+      <section class="section" id="kemampuan">
+        <div class="section-head"><span class="section-no">05</span><h2>Kompetensi</h2></div>
+        <div class="skill-group"><div class="skill-label">Keterampilan Kerja</div><div class="pills"><span class="pill">Disiplin</span><span class="pill">Tanggung jawab</span><span class="pill">Kerja sama tim</span><span class="pill">Komunikasi dasar</span></div></div>
+        <div class="skill-group"><div class="skill-label">Sikap Profesional</div><div class="pills"><span class="pill">Mau belajar</span><span class="pill">Mandiri</span><span class="pill">Ketahanan fisik dan mental</span><span class="pill">Mengikuti arahan</span></div></div>
+      </section>
+      <section class="section">
+        <div class="section-head"><span class="section-no">06</span><h2>Tujuan</h2></div>
+        <div class="note">Berkembang secara profesional, meningkatkan keterampilan, dan mendukung pencapaian target perusahaan dengan etos kerja yang baik.</div>
+      </section>
+    </aside>
+  </div>
+</article>
+</main>
+<footer class="footer">© 2026 Rhamdani Syahid · Curriculum Vitae</footer>
+</body>
+</html>
